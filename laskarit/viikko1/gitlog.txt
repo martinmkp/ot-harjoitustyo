@@ -1,0 +1,114 @@
+commit 8998d29dfefc6f82424c54d9e60da5492d4df8bf
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 13:15:48 2022 +0200
+
+    Muutoksia directoryyn tiedostoja/
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit b9d1b4ae24ea0de4ec61046c655893924f128489
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 13:05:57 2022 +0200
+
+    tiedostoja/ luotu
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 976e95565b5c7827497863f260ba66c3d193bfd0
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:55:16 2022 +0200
+
+    Muutoksia
+
+ eka.txt    | 5 -----
+ kolmas.txt | 2 +-
+ 2 files changed, 1 insertion(+), 6 deletions(-)
+
+commit 174ae7effe57d64c84941f03940fddd6a828c8a8
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:45:42 2022 +0200
+
+    tiedosto.txt nimetty uudestaan eka.txt:ksi
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 2344797a3cd2d11763685c644999293f4f9c8249
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:44:13 2022 +0200
+
+    toinen.txt removed
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 338b78ff3b995084e0c3e364886610ee16714162
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:42:59 2022 +0200
+
+    Tekstia poistettu ja lisätty tiedosto.txt:een
+
+ tiedosto.txt | 20 +++++++++++++++++---
+ 1 file changed, 17 insertions(+), 3 deletions(-)
+
+commit b6392392fb0987cd930657641ad2fdce4a2082bf
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:40:06 2022 +0200
+
+    Paljon tekstiä tiedosto.txt:een
+
+ tiedosto.txt | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+commit 413ac1c4d278c7f9278a4c1bc4278e4d0e18afaa
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:34:39 2022 +0200
+
+    Directory stuff/ added
+
+ stuff/neljas.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 4f789f75da01ad6165f2606c01cd2ed1713f332c
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:32:01 2022 +0200
+
+    Muutoksia toinen.txt ja kolmas.txt
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit 88745a1c755271f1f27ee07c793230b7e7a804a3
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:31:01 2022 +0200
+
+    Luotu kolmas tiedosto
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a3647ce59c8c91e14d746806d623e7faf7ad0030
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:22:09 2022 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit f0338d5c3d25abbe108f8242c16bd4999fd3f980
+Author: Martin Mäkipää <martin.makipaa@helsinki.fi>
+Date:   Wed Mar 16 12:15:07 2022 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
