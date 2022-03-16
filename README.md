@@ -8,4 +8,4 @@
 
 [gitlog.txt](https://github.com/martinmkp/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt) <br />
 [komentorivi.txt](https://github.com/martinmkp/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
------
+
