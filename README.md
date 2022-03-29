@@ -2,7 +2,7 @@
 
 ## Tehtävät
 
-### Viikko 1
+## Viikko 1
 
 * HUOM: Tiedostossa gitlog.txt näkyvä sposti (HY) eroaa tämän tilin spostista (gmail) johtuen väärästä konfiguraatiosta paikallisessa repossa. 
 
@@ -11,7 +11,7 @@
 [komentorivi.txt](https://github.com/martinmkp/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
 
 
-### Viikko 2
+## Viikko 2
 [Vaatimusmäärittely](https://github.com/martinmkp/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
 <br />
 [Työaikakirjanpito](https://github.com/martinmkp/ot-harjoitustyo/blob/main/dokumentaatio/tyoaikakirjanpito.md)
