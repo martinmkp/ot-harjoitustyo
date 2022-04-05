@@ -14,6 +14,7 @@ Sovelluksella on alustavasti vain yksi käyttäjärooli.
 * Kuvaajan tallentaminen
 * Graafinen käyttöliittymä
 * Tietokanta, johon voi tallentaa ja josta voi hakea tekstidataa
+<br/>
 Sovelluskehityksen edetessä toiminnallisuuksia tulee mahdollisesti lisää.
 
 ## Käyttöliittymäluonnos
