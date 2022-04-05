@@ -11,5 +11,3 @@
   * Sub Tarkistaa, että suuret alkukirjaimet ja välimerkit poistettu
   * Sub Tarkistaa, että jokaisella sanalla on koordinaatit
 * Seuraavaksi vuorossa on sanojen piirtäminen kuvaajaan koordinaattien perusteella
-
-

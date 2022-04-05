@@ -1,20 +1,22 @@
 # Vaatimusmäärittely
 
 ## Sovelluksen tarkoitus
-Sovelluksen tarkoitus on visualisoida yksinkertaisen yksineuronisen neuroverkon (perceptron) kouluttamista.
-Sovellukseen voi syöttää kaksiulotteista dataa, jonka perusteella "verkko", eli yhden neuronin
-sisältävä malli koulutetaan. Koulutusprosessi visualisoidaan kaksiulotteisten graafien avulla.
+Sovelluksen tarkoitus on luoda annetusta tekstitiedostosta sanapilvi.
+Sanapilvi on kuvaaja, jossa näytetään tekstissä esiintyvät eri sanat.
+Sanojen koko vastaa niiden yleisyyttä tekstissä: mitä useammin sana esiintyy,
+sitä suurempi se on. Sovellusta voi käyttää esim. tekstianalyysin työkaluna.
 
 ## Käyttäjät
 Sovelluksella on alustavasti vain yksi käyttäjärooli. 
 
 ## Alustavasti suunnitellut toiminnallisuudet
-* Graafinen käyttöliittymä, josta hyperparametreja voi säätää
-* Tietokanta, johon voi tallentaa ja josta voi hakea dataa
+* Tekstitiedoston lukeminen ja kuvaajan piirtäminen
+* Kuvaajan tallentaminen
+* Graafinen käyttöliittymä
+* Tietokanta, johon voi tallentaa ja josta voi hakea tekstidataa
 Sovelluskehityksen edetessä toiminnallisuuksia tulee mahdollisesti lisää.
 
 ## Käyttöliittymäluonnos
 Käyttöliittymäluonnos suunnitellaan myöhemmässä vaiheessa.
-
 
 
