@@ -14,4 +14,3 @@
 * README päivitetty
 * .gitignore lisätty
 <br />
-* Seuraavaksi vuorossa on sanojen piirtäminen kuvaajaan koordinaattien perusteella
