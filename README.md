@@ -1,23 +1,58 @@
 # Ohjelmistotekniikka, harjoitustyö
 
-## Tehtävät
+## Aihe: Sanapilvi
 
-## Viikko 1
-
-* HUOM: Tiedostossa gitlog.txt näkyvä sposti (HY) eroaa tämän tilin spostista (gmail) johtuen väärästä konfiguraatiosta paikallisessa repossa. 
-
-[gitlog.txt](https://github.com/martinmkp/ot-harjoitustyo/blob/main/laskarit/viikko1/gitlog.txt) 
+## Dokumentaatio
+[Vaatimusmäärittely](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/vaatimusmaarittely.md)
 <br />
-[komentorivi.txt](https://github.com/martinmkp/ot-harjoitustyo/blob/main/laskarit/viikko1/komentorivi.txt)
+[Työaikakirjanpito](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/tyoaikakirjanpito.md)
+<br />
+[Changelog](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/changelog.md)
 
 
-## Viikko 2
-[Vaatimusmäärittely](https://github.com/martinmkp/ot-harjoitustyo/blob/main/dokumentaatio/vaatimusmaarittely.md)
-<br />
-[Työaikakirjanpito](https://github.com/martinmkp/ot-harjoitustyo/blob/main/dokumentaatio/tyoaikakirjanpito.md)
-<br /><br />
-[Unicafe Testikattavuus](https://github.com/martinmkp/ot-harjoitustyo/blob/main/laskarit/viikko2/testikattavuus.png)
-<br />
-[Unicafe Kassan ja Maksukortin testit](https://github.com/martinmkp/ot-harjoitustyo/tree/main/laskarit/viikko2/unicafe/src/tests)
+## Projektin kuvaus:
+Sovelluksen tarkoitus on luoda annetusta tekstitiedostosta sanapilvi.
+Sanapilvi on kuvaaja, jossa näytetään tekstissä esiintyvät eri sanat.
+Sanojen koko vastaa niiden yleisyyttä tekstissä: mitä useammin sana esiintyy,
+sitä suurempi se on. Sovellusta voi käyttää esim. tekstianalyysin työkaluna.
+
+## Riippuvuudet
+* Python 3.8
+* Numpy 1.22.3
+* Coverage 6.3.2
+* Invoke 1.7.0
+* Pytest 7.1.1
+* Puuttuvat kirjastot, esim. Numpy, voidaan asentaa komennolla:
+```
+pip3 install <nimi>==<versionumero>
+```
+
+## Poetryn asennus ja alustus
+```
+poetry install
+```
+```
+poetry run invoke build
+```
+
+
+
+## Komentorivitoiminnot
+* Ohjelman suorittaminen:
+```
+poetry run invoke start
+```
+* Testaus:
+```
+poetry run invoke test
+```
+* Testikattavuus
+```
+poetry run invoke coverage-report
+```
+
+## Laskarit
+[Linkki](https://github.com/martinmkp/ot-harjoitustyo/tree/main/laskarit)
+
 
 
