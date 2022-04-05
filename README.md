@@ -22,7 +22,8 @@ sitä suurempi se on. Sovellusta voi käyttää esim. tekstianalyysin työkaluna
 * Coverage 6.3.2
 * Invoke 1.7.0
 * Pytest 7.1.1
-* Puuttuvat kirjastot, esim. Numpy, voidaan asentaa komennolla:
+<br />
+Puuttuvat kirjastot, esim. Numpy, voidaan asentaa komennolla:
 ```
 pip3 install <nimi>==<versionumero>
 ```
@@ -50,9 +51,4 @@ poetry run invoke test
 ```
 poetry run invoke coverage-report
 ```
-
-## Laskarit
-[Linkki](https://github.com/martinmkp/ot-harjoitustyo/tree/main/laskarit)
-
-
 
