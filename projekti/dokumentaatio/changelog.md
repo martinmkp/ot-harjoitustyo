@@ -14,3 +14,6 @@
 * README päivitetty
 * .gitignore lisätty
 <br />
+
+## Viikko 4
+* Ohjelma osaa nyt lukea dataa ilman kovakoodausta - ainoastaan suhteellinen tiedostopolku tarvitaan
