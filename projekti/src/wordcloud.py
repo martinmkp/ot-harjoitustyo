@@ -15,12 +15,11 @@ class WordCloud:
         self.y_array = None
 
 
-    def read_txt(self, directory, filename, encode = "utf-8"):
+    def read_txt(self, dir, encode = "utf-8"):
         """
         Reads a txt-file
         """
-        print("Reading the text data...")
-        fullpath = os.path.join(directory, filename)
+        fullpath = os.path.join(os.getcwd()[:-3], dir)
         try:
             with open(fullpath, encoding = encode) as file:
                 self.text = ''.join(file.readlines())
@@ -72,13 +71,3 @@ class WordCloud:
 
 
 
-if __name__ == "__main__":
-    # absolute directory
-    dir = "/home/martin/Desktop/Ohjelmistotekniikka 2022/ot-harjoitustyo/projekti/data_folder"
-    # filename
-    file = "tekstidata.txt"
-    wordcloud = WordCloud()
-    wordcloud.read_txt(dir, file)
-    wordcloud.modify_text()
-    wordcloud.count_words()
-    wordcloud.set_coordinates()
