@@ -8,6 +8,7 @@ authors = ["Martin Mäkipää <martin.makipaa@gmail.com>"]
 python = "^3.8"
 numpy = "^1.22.3"
 invoke = "^1.7.0"
+matplotlib = "^3.5.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.1"

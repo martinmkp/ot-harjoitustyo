@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 import os
 
 class WordCloud:
@@ -64,11 +65,38 @@ class WordCloud:
         """
         Sets random coordinates for the words.
         """
-        x_array = np.random.uniform(low = -5, high = 5, size = len(self.word_counts))
-        y_array = np.random.uniform(low = -5, high = 5, size = len(self.word_counts))
+        self.x_array = np.random.uniform(low = -5, high = 5, size = len(self.word_counts))
+        self.y_array = np.random.uniform(low = -5, high = 5, size = len(self.word_counts))
+    
 
-        for i in range(len(self.word_counts)):
-            self.coordinate_dict[self.word_counts[i][0]] = (x_array[i], y_array[i])
+    def plot_words(self):
+        """
+        Plots the words on a 2-d graphs. The size of the words is defined
+        by number of their appearnce in the given dataset.
+        """
+        # Set up colors
+        colors = ["#069AF3", "#13EAC9", "#90EE90", "#00FF00"]
+        curr_color = ""
+
+
+        fig, ax = plt.subplots()
+        ax.scatter(self.x_array, self.y_array, color = 'white', marker = ',')
+
+        for i, label in enumerate(list(self.word_counts)):
+            if i < len(self.word_counts) // 4:
+                curr_color = colors[0]
+            elif i < len(self.word_counts) // 2:
+                curr_color = colors[1]
+            elif i < 3 * len(self.word_counts) // 4:
+                curr_color = colors[2]
+            else:
+                curr_color = colors[3]
+            print(curr_color)
+            ax.annotate(label[0], (self.x_array[i], self.y_array[i]), size = 8+label[1]*3, color = curr_color)
+
+        ax.axis("off")
+        fig.savefig("kuvaaja.png")
+
 
 
 
