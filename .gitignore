@@ -1,6 +1,5 @@
 .pytest_cache
-laskarit/viikko2/unicafe/src/__pycache__/
-laskarit/viikko2/unicafe/src/tests/__pycache__/
+__pycache__
+*.pyc
 .coverage
-projekti/src/__pycache__
 htmlcov
