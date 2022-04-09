@@ -32,13 +32,10 @@ pip3 install <nimi>==<versionumero>
 ```
 poetry install
 ```
-```
-poetry run invoke build
-```
-
 
 
 ## Komentorivitoiminnot
+Suorita seuraavat komennot tiedostopolussa "../projekti/"
 * Ohjelman suorittaminen:
 ```
 poetry run invoke start
