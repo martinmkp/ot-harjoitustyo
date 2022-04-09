@@ -17,6 +17,7 @@ Sanojen koko vastaa niiden yleisyyttä tekstissä: mitä useammin sana esiintyy,
 sitä suurempi se on. Sovellusta voi käyttää esim. tekstianalyysin työkaluna.
 
 ## Riippuvuudet
+Projekti on testattu seuraavilla versioilla:
 * Python 3.8
 * Numpy 1.22.3
 * Coverage 6.3.2
@@ -25,7 +26,7 @@ sitä suurempi se on. Sovellusta voi käyttää esim. tekstianalyysin työkaluna
 <br />
 Puuttuvat kirjastot, esim. Numpy, voidaan asentaa komennolla:
 ```
-pip3 install <nimi>==<versionumero>
+pip3 install PAKETIN_NIMI
 ```
 
 ## Poetryn asennus ja alustus
