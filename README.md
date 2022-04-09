@@ -35,7 +35,7 @@ poetry install
 
 
 ## Komentorivitoiminnot
-Suorita seuraavat komennot tiedostopolussa "../projekti/"
+Seuraavat komennot suoritetaan repon kandiossa "/projekti/"
 * Ohjelman suorittaminen:
 ```
 poetry run invoke start
@@ -45,6 +45,9 @@ poetry run invoke start
 poetry run invoke test
 ```
 * Testikattavuus
+```
+poetry run invoke coverage
+```
 ```
 poetry run invoke coverage-report
 ```
