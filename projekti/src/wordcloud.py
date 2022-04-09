@@ -19,7 +19,7 @@ class WordCloud:
         """
         Reads a txt-file
         """
-        fullpath = os.path.join(os.getcwd(), dir)
+        fullpath = os.path.join(os.getcwd()[:-9], dir)
         print("Path:\n", fullpath)
         try:
             with open(fullpath, encoding = encode) as file:
