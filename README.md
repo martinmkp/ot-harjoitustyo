@@ -24,7 +24,7 @@ Projekti on testattu seuraavilla versioilla:
 * Invoke 1.7.0
 * Pytest 7.1.1
 <br />
-Puuttuvat kirjastot, esim. Numpy, voidaan asentaa komennolla:
+Puuttuvat kirjastot, esim. Numpy, voidaan asentaa komennolla: <br />
 ```
 pip3 install PAKETIN_NIMI
 ```
