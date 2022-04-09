@@ -10,8 +10,8 @@ sitä suurempi se on. Sovellusta voi käyttää esim. tekstianalyysin työkaluna
 Sovelluksella on alustavasti vain yksi käyttäjärooli. 
 
 ## Alustavasti suunnitellut toiminnallisuudet
-* Tekstitiedoston lukeminen ja kuvaajan piirtäminen
-* Kuvaajan tallentaminen
+* Tekstitiedoston lukeminen ja kuvaajan piirtäminen **Tehty**
+* Kuvaajan tallentaminen **Tehty**
 * Graafinen käyttöliittymä
 * Tietokanta, johon voi tallentaa ja josta voi hakea tekstidataa
 <br/>

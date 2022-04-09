@@ -22,3 +22,5 @@
   * HTML-raportin luominen toimii
   * Paranneltu README:n ohjeita
   * Lisätty main.py -tiedosto josta itse projekti suoritetaan
+* Ohjelma piirtää sanapilven sanoista matplotlibilla
+  * Tällä hetkellä sanat vielä toistensa päällä
