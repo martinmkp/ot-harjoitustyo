@@ -5,5 +5,6 @@
 | 29.3. | 1    | Projektin aloittaminen |
 | 5.4.  | 8    | Aiheen vaihtaminen, ensimmäinen luokka ja testejä |
 | 8.4.  | 1    | Tekstitiedoston lukeminen - korjaus |
+| 9.4.  | 2    | HTML-raportti toimii, koodi toimii ilman kovakoodattua polkua |
 
-* Yhteensä 10 h
+* Yhteensä 12 h

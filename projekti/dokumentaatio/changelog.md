@@ -16,5 +16,9 @@
 <br />
 
 ## Viikko 4
-* Ohjelma osaa nyt lukea dataa ilman kovakoodausta - ainoastaan suhteellinen tiedostopolku tarvitaan
-* .gitignore ei huomioi __pycache__ -tiedostoja
+* Korjaukset viime viikon palautteeseen perustuen:
+  * Ohjelma osaa nyt lukea dataa ilman kovakoodausta - ainoastaan suhteellinen tiedostopolku tarvitaan
+  * .gitignore ei huomioi __pycache__ -tiedostoja
+  * HTML-raportin luominen toimii
+  * Paranneltu README:n ohjeita
+  * Lisätty main.py -tiedosto josta itse projekti suoritetaan
