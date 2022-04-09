@@ -71,17 +71,18 @@ class WordCloud:
 
     def plot_words(self):
         """
-        Plots the words on a 2-d graphs. The size of the words is defined
+        Creates a wordcloud. The size of the words is defined
         by number of their appearnce in the given dataset.
         """
         # Set up colors
         colors = ["#069AF3", "#13EAC9", "#90EE90", "#00FF00"]
         curr_color = ""
 
-
+        # Set up the plot
         fig, ax = plt.subplots()
         ax.scatter(self.x_array, self.y_array, color = 'white', marker = ',')
 
+        # Add the words to the invisible markers in the plot as annotations
         for i, label in enumerate(list(self.word_counts)):
             if i < len(self.word_counts) // 4:
                 curr_color = colors[0]
@@ -94,7 +95,9 @@ class WordCloud:
             print(curr_color)
             ax.annotate(label[0], (self.x_array[i], self.y_array[i]), size = 8+label[1]*3, color = curr_color)
 
+        # Removes the axis
         ax.axis("off")
+        # Saves the figure
         fig.savefig("kuvaaja.png")
 
 
