@@ -19,7 +19,8 @@ class WordCloud:
         """
         Reads a txt-file
         """
-        fullpath = os.path.join(os.getcwd()[:-3], dir)
+        fullpath = os.path.join(os.getcwd(), dir)
+        print("Path:\n", fullpath)
         try:
             with open(fullpath, encoding = encode) as file:
                 self.text = ''.join(file.readlines())
