@@ -52,4 +52,12 @@ poetry run invoke coverage
 ```
 poetry run invoke coverage-report
 ```
+* Koodin laadun analysointi Pylint-työkalulla
+```
+poetry run invoke lint
+```
+* Koodin muotoilu automaattisesti
+```
+poetry run invoke format
+```
 
