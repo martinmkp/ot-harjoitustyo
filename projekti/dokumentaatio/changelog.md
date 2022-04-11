@@ -24,5 +24,5 @@
   * Lisätty main.py -tiedosto josta itse projekti suoritetaan
 * Ohjelma piirtää sanapilven sanoista matplotlibilla
   * Tällä hetkellä sanat vielä toistensa päällä:
-![Alt text](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/sanapilvi.png)
+![Alt text](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/sanapilvi.png | width=100)
 * Lisätty pylint koodin tarkistusta varten ja autopep8 koodin muotoilua varten task.py -tiedostoon
