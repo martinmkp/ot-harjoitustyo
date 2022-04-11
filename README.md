@@ -23,11 +23,8 @@ Projekti on testattu seuraavilla versioilla:
 * Coverage 6.3.2
 * Invoke 1.7.0
 * Pytest 7.1.1
-<br />
-Puuttuvat kirjastot, esim. Numpy, voidaan asentaa komennolla: <br />
-```
-pip3 install PAKETIN_NIMI
-```
+* pylint 2.13.5
+* autopep8 1.6.0
 
 ## Poetryn asennus ja alustus
 ```
