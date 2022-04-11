@@ -1,6 +1,4 @@
-# Ohjelmistotekniikka, harjoitustyö
-
-## Aihe: Sanapilvi
+# Ohjelmistotekniikka, harjoitustyö: Sanapilvi
 
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/vaatimusmaarittely.md)
