@@ -24,3 +24,4 @@
   * Lisätty main.py -tiedosto josta itse projekti suoritetaan
 * Ohjelma piirtää sanapilven sanoista matplotlibilla
   * Tällä hetkellä sanat vielä toistensa päällä
+* Lisätty pylint koodin tarkistusta varten ja autopep8 koodin muotoilua varten task.py -tiedostoon

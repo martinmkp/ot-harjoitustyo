@@ -6,5 +6,6 @@
 | 5.4.  | 8    | Aiheen vaihtaminen, ensimmäinen luokka ja testejä |
 | 8.4.  | 1    | Tekstitiedoston lukeminen - korjaus |
 | 9.4.  | 4    | HTML-raportti toimii, kuvaaja |
+| 10.4. | 2    | Koodin testaus, pylint ja autopep8 |
 
-* Yhteensä 14 h
+* Yhteensä 16 h
