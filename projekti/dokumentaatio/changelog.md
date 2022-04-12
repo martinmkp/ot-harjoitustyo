@@ -25,3 +25,4 @@
 * Ohjelma piirtää sanapilven sanoista matplotlibilla
   * Tällä hetkellä sanat vielä toistensa päällä:
 * Lisätty pylint koodin tarkistusta varten ja autopep8 koodin muotoilua varten task.py -tiedostoon
+* Ohjelman komennot toimivat Linux-etäkoneella /tmp/ -kansiossa
