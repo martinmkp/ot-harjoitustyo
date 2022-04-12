@@ -6,6 +6,8 @@
 [Työaikakirjanpito](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/tyoaikakirjanpito.md)
 <br />
 [Changelog](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/changelog.md)
+<br />
+[Arkkitehtuurikuvaus](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/arkkitehtuuri.md)
 
 
 ## Projektin kuvaus:
