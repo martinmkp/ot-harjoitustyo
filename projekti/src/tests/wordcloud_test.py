@@ -1,3 +1,4 @@
+from pyexpat import XML_PARAM_ENTITY_PARSING_NEVER
 import unittest
 from wordcloud import WordCloud
 
@@ -26,22 +27,29 @@ class TestWordCloud(unittest.TestCase):
 
         self.assertEqual(uppercase_counter, 0)
 
-    def test_koordinaatti_sanakirja_oikein(self):
+    def test_koordinaatit_keskiarvo(self):
         """
-        Testaa, että koordinaattilistassa jokainen avain on str
-        ja jokaisen arvon (tuple) molemmat elementit ovat float-muodossa.
+        Testaa että koordinaatit ovat järkevästi jakautuneet,
+        eli keskiarvo lähellä nollaa.
         """
-        key_counter = 0
-        value_counter = 0
-        for key in self.cloud.coordinate_dict:
-            if type(key) != str:
-                key_counter += 1
-            if (
-                self.cloud.coordinate_dict[key][0] != float
-                or
-                self.cloud.coordinate_dict[key][1] != float
-            ):
-                value_counter += 1
+        dir = "projekti/data_folder/tekstidata.txt"
+        self.cloud.read_txt(dir)
+        self.cloud.modify_text()
+        self.cloud.string_to_list()
+        self.cloud.count_words()
+        self.cloud.set_coordinates()
+        x_sum = 0.0
+        y_sum = 0.0
+        x_avg = 0.0
+        y_avg = 0.0
+        for num in self.cloud.x_array:
+            x_sum += num
+        for num in self.cloud.y_array:
+            y_sum += num
+        x_avg = x_sum/len(self.cloud.x_array)
+        y_avg = y_sum/len(self.cloud.y_array)
 
-        self.assertEqual(key_counter, 0)
-        self.assertEqual(value_counter, 0)
+        self.assertGreaterEqual(x_avg , -2.5)
+        self.assertGreaterEqual(y_avg , -2.5)
+        self.assertLessEqual(x_avg , 2.5)
+        self.assertLessEqual(y_avg , 2.5)
