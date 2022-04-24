@@ -26,3 +26,9 @@
   * Tällä hetkellä sanat vielä toistensa päällä:
 * Lisätty pylint koodin tarkistusta varten ja autopep8 koodin muotoilua varten task.py -tiedostoon
 * Ohjelman komennot toimivat Linux-etäkoneella /tmp/ -kansiossa
+<br />
+
+## Viikko 5
+* Github release lisätty
+* Korjaukset viime viikon palautteeseen perustuen
+  * Wordcloud-luokan toiminnallisuudet jaettu useampaan luokkaan

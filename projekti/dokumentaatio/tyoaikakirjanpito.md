@@ -7,6 +7,7 @@
 | 8.4.  | 1    | Tekstitiedoston lukeminen - korjaus |
 | 9.4.  | 4    | HTML-raportti toimii, kuvaaja |
 | 10.4. | 2    | Koodin testaus, pylint ja autopep8 |
-| 12.4. | 4    | Bugien korjailua, dokumentointi, testit, arkkitehtuuri|
+| 12.4. | 4    | Bugien korjailua, dokumentointi, testit, arkkitehtuuri |
+| 24.4. | 3    | Koodin rakenteen parantelu, viikon 5 tehtävät |
 
-* Yhteensä 20 h
+* Yhteensä 23 h
