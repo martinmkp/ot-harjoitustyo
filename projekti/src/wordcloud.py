@@ -5,13 +5,7 @@ import matplotlib.pyplot as plt
 
 class WordCloud:
     """
-    This class contains the functionalities to create
-    a word cloud. It: 
-    - takes a .txt file as an input & reads it to a str variable
-    - removes punctuation marks and sets upper case char to lower case
-    - splits the string to a list of words
-    - draws a 2d wordcloud from the list of words
-    - saves the plot to the root of this project as sanapilvi.png
+    This class contains the functionalities to plot a wordcloud.
     """
 
     def __init__(self, word_count, x, y):
@@ -24,7 +18,6 @@ class WordCloud:
         Creates a wordcloud. The size of the words is defined
         by number of their appearnce in the given dataset.
         """
-        print("\nCreating a wordcloud...")
         # Set up colors
         colors = ["#069AF3", "#13EAC9", "#90EE90", "#00FF00"]
         curr_color = ""
@@ -50,4 +43,3 @@ class WordCloud:
         ax.axis("off")
         # Saves the figure
         fig.savefig("sanapilvi.png")
-        print("Wordcloud created and saved successfully.")

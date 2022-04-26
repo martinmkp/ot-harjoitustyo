@@ -22,7 +22,6 @@ class SetUp:
         - setting all characters lower case
         - removing punctuation marks 
         """
-        print("\nRemoving the punctuation marks...")
         punctuation = [".", ",", "?", "!", "/"]
         special_punctuation = "/"
         self.text_modified = self.text.lower()
@@ -31,26 +30,20 @@ class SetUp:
                 self.text_modified = self.text_modified.replace(i, " ")
             else:
                 self.text_modified = self.text_modified.replace(i, "")
-        print("Punctuation marks removed.")
 
     def string_to_list(self):
         "Transforms the string to a list of words."
-        print("\nCreating a list of words...")
         self.text_list = list(self.text_modified.split(" "))
-        print("A list of words created from the string.")
 
     def count_words(self):
         """
         Counts the occurrences of each unique word in the list
         """
-        print("\nCounting the frequencies of the words...")
         self.word_counts = {word: 0 for word in set(self.text_list)}
         for word in self.text_list:
             self.word_counts[word] += 1
         self.word_counts = sorted(
             self.word_counts.items(), key=lambda x: x[1], reverse=True)
-        print("Frequencies calculated. The most frequent word is:\n",
-              self.word_counts[0][0], "with", self.word_counts[0][1], "appearances.")
         return self.word_counts
 
     def set_coordinates(self):
