@@ -92,8 +92,3 @@ class DataBase:
 
         except Exception as e:
             print("An exception occurred:\n", e)
-
-
-if __name__ == "__main__":
-    database = DataBase()
-    database.connect_db()
