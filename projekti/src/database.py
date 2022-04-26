@@ -1,6 +1,5 @@
 import os
 import sqlite3
-import json
 
 
 class DataBase:
@@ -31,15 +30,15 @@ class DataBase:
         self.connection.commit()
 
     def save_to_db(self, name, x_coord, y_coord, word_counts):
-        insert_table = f"""
+        insert_table = """
         INSERT INTO Wordclouds (name, x_coord, y_coord, word_counts)
         VALUES (?, ?, ?, ?)
         """
         try:
             self.cursor.execute(insert_table,
                                 (name, x_coord, y_coord, word_counts))
-        except Exception as e:
-            print("An exception occurred:\n", e)
+        except Exception as err:
+            print("An exception occurred:\n", err)
 
     def coordinates_manipulation(self, old_string):
         new_string = old_string.replace("[", "")
@@ -74,8 +73,8 @@ class DataBase:
             self.connection.commit()
             print(names)
 
-        except Exception as e:
-            print("An exception occurred:\n", e)
+        except Exception as err:
+            print("An exception occurred:\n", err)
 
     def read_from_db(self, name):
         read_table = "SELECT * FROM Wordclouds WHERE name=?;"
@@ -90,5 +89,6 @@ class DataBase:
 
             return (x_coordinates, y_coordinates, word_count)
 
-        except Exception as e:
-            print("An exception occurred:\n", e)
+        except Exception as err:
+            print("An exception occurred:\n", err)
+            return None

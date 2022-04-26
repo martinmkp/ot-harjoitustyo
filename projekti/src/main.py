@@ -1,7 +1,3 @@
-import os
-import sqlite3
-import numpy as np
-import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from data_setup import SetUp
 from reader import Reader
@@ -9,7 +5,7 @@ from database import DataBase
 
 
 def main():
-    dir = "projekti/data_folder/tekstidata.txt"
+    directory = "projekti/data_folder/tekstidata.txt"
 
     print("Read data from a text file (t) or an sqlite database (s)?")
     data_reading = input("(t/s): ")
@@ -17,7 +13,7 @@ def main():
     if data_reading == "t":
         # Reads data from a text file
         reader = Reader()
-        text_data = reader.read_txt(dir)
+        text_data = reader.read_txt(directory)
 
         # Prepares data for wordcloud
         setup = SetUp(text_data)
@@ -27,12 +23,12 @@ def main():
         x_coordinates, y_coordinates = setup.set_coordinates()
 
     elif data_reading == "s":
-        db = DataBase()
-        db.connect_db()
+        database = DataBase()
+        database.connect_db()
         print("The datasets in the sqlite database are:")
-        db.read_dataset_names_from_db()
+        database.read_dataset_names_from_db()
         column_name = input("Please give the name of the dataset: ")
-        x_coordinates, y_coordinates, words_count = db.read_from_db(
+        x_coordinates, y_coordinates, words_count = database.read_from_db(
             column_name)
 
     # Creates a word cloud, and saves it as a .png file
@@ -46,11 +42,11 @@ def main():
     teksti = input(
         "Save coordinates and word count to a sqlite database? (y/n): ")
     if teksti == "y":
-        db = DataBase()
-        db.connect_db()
+        database = DataBase()
+        database.connect_db()
         nimi = input("Please give a name for the sqlite insertion: ")
-        db.save_to_db(nimi, str(x_coordinates),
-                      str(y_coordinates), str(words_count))
+        database.save_to_db(nimi, str(x_coordinates),
+                            str(y_coordinates), str(words_count))
         print("Coordinates and word counts saved to the database.")
 
 

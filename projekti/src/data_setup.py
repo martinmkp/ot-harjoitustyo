@@ -1,6 +1,4 @@
-import os
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 class SetUp:
@@ -17,11 +15,8 @@ class SetUp:
         self.y_array = None
 
     def modify_text(self):
-        """
-        Modifies the text data (string) by:
-        - setting all characters lower case
-        - removing punctuation marks 
-        """
+        """ Modifies the text data (string) by setting all characters lower case
+        and removing punctuation marks """
         punctuation = [".", ",", "?", "!", "/"]
         special_punctuation = "/"
         self.text_modified = self.text.lower()
@@ -32,7 +27,7 @@ class SetUp:
                 self.text_modified = self.text_modified.replace(i, "")
 
     def string_to_list(self):
-        "Transforms the string to a list of words."
+        """Transforms the string to a list of words."""
         self.text_list = list(self.text_modified.split(" "))
 
     def count_words(self):

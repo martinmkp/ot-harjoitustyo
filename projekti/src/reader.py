@@ -1,6 +1,4 @@
 import os
-import numpy as np
-import matplotlib.pyplot as plt
 
 
 class Reader:
@@ -11,15 +9,16 @@ class Reader:
     def __init__(self):
         self.text = ""
 
-    def read_txt(self, dir, encode="utf-8"):
+    def read_txt(self, directory, encode="utf-8"):
         """
         Reads a txt-file
         """
-        fullpath = os.path.join(os.getcwd()[:-9], dir)
+        fullpath = os.path.join(os.getcwd()[:-9], directory)
         try:
             with open(fullpath, encoding=encode) as file:
                 self.text = ''.join(file.readlines())
             return self.text
 
-        except Exception as e:
-            print("An exception occurred:\n", e)
+        except FileNotFoundError:
+            print("An exception occurred:\n", FileNotFoundError)
+            return None
