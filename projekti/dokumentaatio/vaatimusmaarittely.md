@@ -12,7 +12,7 @@ Sovelluksella on alustavasti vain yksi käyttäjärooli.
 ## Alustavasti suunnitellut toiminnallisuudet
 * Tekstitiedoston lukeminen ja kuvaajan piirtäminen **Tehty**
 * Kuvaajan tallentaminen **Tehty**
-* Tietokanta, johon voi tallentaa ja josta voi hakea tekstidataa **Tehty**
+* Tietokanta, johon voi tallentaa ja josta voi hakea dataa **Tehty**
 * Graafinen käyttöliittymä
 
 
