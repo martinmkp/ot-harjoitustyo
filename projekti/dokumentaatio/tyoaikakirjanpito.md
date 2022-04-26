@@ -9,5 +9,6 @@
 | 10.4. | 2    | Koodin testaus, pylint ja autopep8 |
 | 12.4. | 4    | Bugien korjailua, dokumentointi, testit, arkkitehtuuri |
 | 24.4. | 3    | Koodin rakenteen parantelu, viikon 5 tehtävät |
+| 26.4. | 8    | Sqlite-tietokanta, käyttöliittymä |
 
-* Yhteensä 23 h
+* Yhteensä 31 h

@@ -32,3 +32,5 @@
 * Github release lisätty
 * Korjaukset viime viikon palautteeseen perustuen
   * Wordcloud-luokan toiminnallisuudet jaettu useampaan luokkaan
+  * Tulostuskomennot siirretty main.py -tiedostoon
+* Tekstikäyttöliittymän ja sqlite-tietokannan 1. versiot
