@@ -1,5 +1,8 @@
 # Ohjelmistotekniikka, harjoitustyö: Sanapilvi
 
+## Release
+[Viikon 5 release](https://github.com/martinmkp/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Dokumentaatio
 [Vaatimusmäärittely](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/vaatimusmaarittely.md)
 <br />
@@ -27,10 +30,14 @@ Projekti on testattu seuraavilla versioilla:
 * autopep8 1.6.0
 
 ## Poetryn asennus ja alustus
+* Asennus
 ```
 poetry install
 ```
-
+* Ympäristön käynnistys
+```
+poetry shell
+```
 
 ## Komentorivitoiminnot
 Seuraavat komennot suoritetaan repon kandiossa "/projekti/"
