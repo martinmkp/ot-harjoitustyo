@@ -3,18 +3,29 @@ import matplotlib.pyplot as plt
 
 class WordCloud:
     """
-    This class contains the functionalities to plot a wordcloud.
+    Contains the functionalities to plot a wordcloud.
+
+    Attributes:
+        word_count: A list of word counts for each word.
+        x_array: X-coordinates for the word cloud.
+        y-array: Y-coordinates for the word cloud.
     """
 
     def __init__(self, word_count, x_array, y_array):
+        """Constructor for creating a word cloud.
+
+        Args:
+            word_count: A list of word counts for each word.
+            x_array: X-coordinates for the word cloud.
+            y-array: Y-coordinates for the word cloud.
+        """
         self.word_counts = word_count
         self.x_array = x_array
         self.y_array = y_array
 
     def plot_words(self):
         """
-        Creates a wordcloud. The size of the words is defined
-        by number of their appearnce in the given dataset.
+        Plots and saves a wordcloud as a .png file. 
         """
         # Set up colors
         colors = ["#069AF3", "#13EAC9", "#90EE90", "#00FF00"]

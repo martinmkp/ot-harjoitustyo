@@ -2,11 +2,18 @@ import numpy as np
 
 
 class SetUp:
-    """
-    Sets up text data for creating a word cloud.
+    """A class for setting up data for a word cloud.
+
+    Attributes:
+        text: A text data input (assumed to be a string).    
     """
 
     def __init__(self, text):
+        """Constructor.
+
+        Args:
+            text: Input text data (assumed to be a string).
+        """
         self.text = text
         self.text_modified = ""
         self.text_list = []
@@ -31,8 +38,7 @@ class SetUp:
         self.text_list = list(self.text_modified.split(" "))
 
     def count_words(self):
-        """
-        Counts the occurrences of each unique word in the list
+        """Counts the occurrences of each unique word in the list
         """
         self.word_counts = {word: 0 for word in set(self.text_list)}
         for word in self.text_list:
@@ -42,8 +48,7 @@ class SetUp:
         return self.word_counts
 
     def set_coordinates(self):
-        """
-        Sets random coordinates for the words.
+        """Sets random coordinates for the words.
         """
         self.x_array = np.random.uniform(
             low=-5, high=5, size=len(self.word_counts))

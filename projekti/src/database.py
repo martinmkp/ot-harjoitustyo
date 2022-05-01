@@ -3,21 +3,33 @@ import sqlite3
 
 
 class DataBase:
+    """A class for an sqlite database. This database
+    is used to store information about created word clouds.
+
+    Attributes:
+        path: Absolute aath to this project
+        db_path: Relative path to a .db file.
+    """
+
     def __init__(self, path=os.getcwd()[:-9], db_path="projekti/database_sql/wordcloud_db.db"):
+        """Constructor for creating a database.
+
+        Args:
+            path: Absolute aath to this project
+            db_path: Relative path to a .db file.
+        """
         self.fullpath = os.path.join(path, db_path)
         self.connection = None
         self.cursor = None
 
     def connect_db(self):
-        """
-        Connects the database.
+        """Connects the database.
         """
         self.connection = sqlite3.connect(self.fullpath)
         self.cursor = self.connection.cursor()
 
     def create_db(self):
-        """
-        Creates a table for wordclouds.
+        """Creates a table for wordclouds.
         """
         create_table = """
         CREATE TABLE IF NOT EXISTS Wordclouds 
@@ -30,6 +42,14 @@ class DataBase:
         self.connection.commit()
 
     def save_to_db(self, name, x_coord, y_coord, word_counts):
+        """Saves word cloud information to the database.
+
+        Args:
+            name: Name for a word cloud.
+            x_coord: X-coordinates of a word cloud.
+            y_coorx: Y-coordinates of a word cloud.
+            word_counts: Frequency of each word in the dataset.
+        """
         insert_table = """
         INSERT INTO Wordclouds (name, x_coord, y_coord, word_counts)
         VALUES (?, ?, ?, ?)
@@ -41,6 +61,11 @@ class DataBase:
             print("An exception occurred:\n", err)
 
     def coordinates_manipulation(self, old_string):
+        """Manipulates the queried coordinates to a list form.
+
+        Args:
+            old_string: The initially queried coordinates.
+        """
         new_string = old_string.replace("[", "")
         new_string = new_string.replace("]", "")
         new_string = new_string.replace("\n", "")
@@ -50,6 +75,11 @@ class DataBase:
         return new_list
 
     def word_count_manipulation(self, old_string):
+        """Manipulates the queried word count to a list form.
+
+        Args:
+            old_string: The initially queried coordinates.
+        """
         new_string = old_string.replace("[", "")
         new_string = new_string.replace("]", "")
         new_string = new_string.replace("\n", "")
@@ -66,6 +96,8 @@ class DataBase:
         return result_list
 
     def read_dataset_names_from_db(self):
+        """Executes a SELECT query from a db to get a list of names.
+        """
         dataset_names = "SELECT name FROM Wordclouds;"
         try:
             self.cursor.execute(dataset_names)
@@ -77,6 +109,12 @@ class DataBase:
             print("An exception occurred:\n", err)
 
     def read_from_db(self, name):
+        """Executes a SELECT query from adb to get information
+        of a specific word cloud.
+
+        Args:
+            name: Name of a word cloud.
+        """
         read_table = "SELECT * FROM Wordclouds WHERE name=?;"
         try:
             self.cursor.execute(read_table, [name])

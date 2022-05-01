@@ -3,15 +3,19 @@ import os
 
 class Reader:
     """
-    This class teads a .txt file to a string variable.
+    Reads a .txt file to a string variable from the given path.
     """
 
     def __init__(self):
         self.text = ""
 
     def read_txt(self, directory, encode="utf-8"):
-        """
-        Reads a txt-file
+        """Returns a string variable containing data from the given path.
+        It is assumed that the file is a text-file.
+
+        Args:
+            directory: Directory of a textfile.
+            encode: Encoding of the textfile. Set to utf-8 by default.
         """
         fullpath = os.path.join(os.getcwd()[:-9], directory)
         try:
