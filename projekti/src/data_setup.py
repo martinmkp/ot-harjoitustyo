@@ -24,7 +24,8 @@ class SetUp:
     def modify_text(self):
         """ Modifies the text data (string) by setting all characters lower case
         and removing punctuation marks """
-        punctuation = [".", ",", "?", "!", "/"]
+        punctuation = [".", ",", "?", "!", "/",
+                       ":", ";", "[", "]", "(", ")", "-", "&"]
         special_punctuation = "/"
         self.text_modified = self.text.lower()
         for i in punctuation:
