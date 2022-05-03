@@ -55,11 +55,8 @@ class DataBase:
         INSERT INTO Wordclouds (name, x_coord, y_coord, word_counts)
         VALUES (?, ?, ?, ?)
         """
-        try:
-            self.cursor.execute(insert_table,
-                                (name, x_coord, y_coord, word_counts))
-        except Exception as err:
-            print("An exception occurred:\n", err)
+        self.cursor.execute(insert_table,
+                            (name, x_coord, y_coord, word_counts))
 
     def coordinates_manipulation(self, old_string):
         """Manipulates the queried coordinates to a list form.
@@ -100,16 +97,12 @@ class DataBase:
         """Executes a SELECT query from a db to get a list of names.
         """
         dataset_names = "SELECT name FROM Wordclouds;"
-        try:
-            self.cursor.execute(dataset_names)
-            names = self.cursor.fetchall()
-            self.connection.commit()
-            for name in names:
-                self.wordcloud_names.append(name[0])
-            print(self.wordcloud_names)
-
-        except Exception as err:
-            print("An exception occurred:\n", err)
+        self.cursor.execute(dataset_names)
+        names = self.cursor.fetchall()
+        self.connection.commit()
+        for name in names:
+            self.wordcloud_names.append(name[0])
+        print(self.wordcloud_names)
 
     def read_from_db(self, name):
         """Executes a SELECT query from adb to get information
