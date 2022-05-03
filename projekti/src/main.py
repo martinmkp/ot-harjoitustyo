@@ -1,5 +1,7 @@
 from ui_text import TextInterface
 
+DATA_PATH = "projekti/data_folder/"
+
 
 def main(data_path):
     text_interface = TextInterface(data_path)
@@ -9,5 +11,4 @@ def main(data_path):
 
 
 if __name__ == "__main__":
-    data_path = "projekti/data_folder/"
-    main(data_path)
+    main(DATA_PATH)
