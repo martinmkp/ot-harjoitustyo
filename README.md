@@ -4,6 +4,8 @@
 [Viikon 5 release](https://github.com/martinmkp/ot-harjoitustyo/releases/tag/viikko_5)
 
 ## Dokumentaatio
+[Käyttöohje](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/kayttoohje.md)
+<br />
 [Vaatimusmäärittely](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/vaatimusmaarittely.md)
 <br />
 [Työaikakirjanpito](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/tyoaikakirjanpito.md)
