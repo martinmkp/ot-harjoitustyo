@@ -34,3 +34,11 @@
   * Wordcloud-luokan toiminnallisuudet jaettu useampaan luokkaan
   * Tulostuskomennot siirretty main.py -tiedostoon
 * Tekstikäyttöliittymän ja sqlite-tietokannan 1. versiot
+
+## Viikko 6
+* Tekstikäyttöliittymä siirretty erilliseen tiedostoon
+  * main.py ainoastaan ohjelman suoritukseen
+* Tekstikäyttöliittymä hyväksyy vain tietynlaisia input-komentoja
+* Testikattavuutta kasvatettu
+* Arkkitehtuurikuvaus lisätty
+* Käyttöohje

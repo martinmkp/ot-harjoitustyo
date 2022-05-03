@@ -10,5 +10,8 @@
 | 12.4. | 4    | Bugien korjailua, dokumentointi, testit, arkkitehtuuri |
 | 24.4. | 3    | Koodin rakenteen parantelu, viikon 5 tehtävät |
 | 26.4. | 8    | Sqlite-tietokanta, käyttöliittymä |
+| 29.4. | 3    | Käyttöliittymän kehitys |
+| 1.5.  | 4    | Testien parantelu ja bugien korjaus |
+| 3.5.  | 4    | Dokumentaatio, pylint-virheiden vähennys |
 
-* Yhteensä 31 h
+* Yhteensä 42 h
