@@ -13,5 +13,8 @@
 | 29.4. | 3    | Käyttöliittymän kehitys |
 | 1.5.  | 4    | Testien parantelu ja bugien korjaus |
 | 3.5.  | 4    | Dokumentaatio, pylint-virheiden vähennys |
+| 12.5.  | 8    | Yritys tehdä graafinen käyttöliittymä |
+| 14.5.  | 2    | Projektin viimeistely |
+| 15.5. | 5     | Projektin viimeistely |
 
-* Yhteensä 42 h
+* Yhteensä 57 h

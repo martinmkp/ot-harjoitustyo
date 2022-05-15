@@ -14,6 +14,6 @@ Sovelluksella on alustavasti vain yksi käyttäjärooli.
 * Kuvaajan tallentaminen **Tehty**
 * Tietokanta, johon voi tallentaa ja josta voi hakea dataa **Tehty**
 * Tekstikäyttöliittymä **Tehty**
-* Graafinen käyttöliittymä
+* Graafinen käyttöliittymä **Jäi tekemättä tämän kurssin aikana**
 
 

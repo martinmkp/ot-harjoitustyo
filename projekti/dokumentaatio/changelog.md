@@ -42,3 +42,13 @@
 * Testikattavuutta kasvatettu
 * Arkkitehtuurikuvaus lisätty
 * Käyttöohje
+
+## Viikko 7
+* Parannuksia sanapilveen
+  * Sanapilvet eivät nyt laita sanoja päällekkäin
+  * Sanapilven koordinaattiviivat pois näkyvistä
+  * Mahdollisuus valita (suunnilleen) ympyrän tai neliön muotoinen sanapilvi
+  * Sanapilven värit paremmin erottuviksi
+* Pylint-virheiden määrä laskettu alle 3:een
+* Luokkien muuttujat, joita ei tarvita globaalisti (esim. testaamiseen) muutettu yksityisiksi
+
