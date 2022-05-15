@@ -16,4 +16,9 @@ Sovelluksella on alustavasti vain yksi käyttäjärooli.
 * Tekstikäyttöliittymä **Tehty**
 * Graafinen käyttöliittymä **Jäi tekemättä tämän kurssin aikana**
 
+## Jatkokehitysideoita
+* Ohjelman suoritusnopeuden kasvattaminen
+* Sanapilven sanat paremmin limittäin
+* Graafinen käyttöliittymä
+* ui_text.py -tiedoston tyylin parantaminen pylin-virheiden vähentämiseksi
 

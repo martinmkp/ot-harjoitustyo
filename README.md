@@ -1,7 +1,7 @@
 # Ohjelmistotekniikka, harjoitustyö: Sanapilvi
 
 ## Release
-[Viikon 5 release](https://github.com/martinmkp/ot-harjoitustyo/releases/tag/viikko_5)
+[Loppupalautuksen release](https://github.com/martinmkp/ot-harjoitustyo/releases/tag/viikko7)
 
 ## Dokumentaatio
 [Käyttöohje](https://github.com/martinmkp/ot-harjoitustyo/blob/main/projekti/dokumentaatio/kayttoohje.md)
