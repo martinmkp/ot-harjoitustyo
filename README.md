@@ -24,12 +24,13 @@ sitä suurempi se on. Sovellusta voi käyttää esim. tekstianalyysin työkaluna
 ## Riippuvuudet
 Projekti on testattu seuraavilla versioilla:
 * Python 3.8
-* Numpy 1.22.3
+* autopep8 1.6.0
 * Coverage 6.3.2
 * Invoke 1.7.0
 * Pytest 7.1.1
 * pylint 2.13.5
-* autopep8 1.6.0
+* adjustText 0.7.3
+* Numpy 1.22.3
 
 ## Poetryn asennus ja alustus
 * Asennus
