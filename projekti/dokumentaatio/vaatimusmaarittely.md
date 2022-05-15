@@ -20,5 +20,5 @@ Sovelluksella on alustavasti vain yksi käyttäjärooli.
 * Ohjelman suoritusnopeuden kasvattaminen
 * Sanapilven sanat paremmin limittäin
 * Graafinen käyttöliittymä
-* ui_text.py -tiedoston tyylin parantaminen pylin-virheiden vähentämiseksi
+* ui_text.py -tiedoston tyylin parantaminen pylint-virheiden vähentämiseksi
 
