@@ -13,7 +13,7 @@ class TestWordCloud(unittest.TestCase):
         self.reader = Reader()
         self.directory = "projekti/data_folder/tekstidata.txt"
         self.text_data = self.reader.read_txt(self.directory)
-        self.setup = SetUp(self.text_data)
+        self.setup = SetUp(self.text_data, "s")
         self.setup.modify_text()
         self.setup.string_to_list()
         self.words_count = self.setup.count_words()

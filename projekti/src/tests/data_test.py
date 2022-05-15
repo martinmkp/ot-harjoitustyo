@@ -14,6 +14,7 @@ class TestTextInterface(unittest.TestCase):
     def test_data_array_types_with_datafile(self):
         self.text_inter.data_source_type = "t"
         self.text_inter.textdata_name = "tekstidata.txt"
+        self.text_inter.shape = "s"
         x_array, y_array, words_count = self.text_inter.execute_data_preprocessing()
         self.assertEqual(type(x_array), np.ndarray)
         self.assertEqual(type(y_array), np.ndarray)

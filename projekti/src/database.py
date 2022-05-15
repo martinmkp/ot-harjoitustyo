@@ -18,16 +18,16 @@ class DataBase:
             path: Absolute aath to this project
             db_path: Relative path to a .db file.
         """
-        self.fullpath = os.path.join(path, db_path)
-        self.connection = None
-        self.cursor = None
+        self.__fullpath = os.path.join(path, db_path)
+        self.__connection = None
+        self.__cursor = None
         self.wordcloud_names = []
 
     def connect_db(self):
         """Connects the database.
         """
-        self.connection = sqlite3.connect(self.fullpath)
-        self.cursor = self.connection.cursor()
+        self.__connection = sqlite3.connect(self.__fullpath)
+        self.__cursor = self.__connection.cursor()
 
     def create_db(self):
         """Creates a table for wordclouds.
@@ -39,8 +39,8 @@ class DataBase:
         x_coord TEXT,
         y_coord TEXT,
         word_counts TEXT);"""
-        self.cursor.execute(create_table)
-        self.connection.commit()
+        self.__cursor.execute(create_table)
+        self.__connection.commit()
 
     def save_to_db(self, name, x_coord, y_coord, word_counts):
         """Saves word cloud information to the database.
@@ -55,7 +55,7 @@ class DataBase:
         INSERT INTO Wordclouds (name, x_coord, y_coord, word_counts)
         VALUES (?, ?, ?, ?)
         """
-        self.cursor.execute(insert_table,
+        self.__cursor.execute(insert_table,
                             (name, x_coord, y_coord, word_counts))
 
     def coordinates_manipulation(self, old_string):
@@ -97,9 +97,9 @@ class DataBase:
         """Executes a SELECT query from a db to get a list of names.
         """
         dataset_names = "SELECT name FROM Wordclouds;"
-        self.cursor.execute(dataset_names)
-        names = self.cursor.fetchall()
-        self.connection.commit()
+        self.__cursor.execute(dataset_names)
+        names = self.__cursor.fetchall()
+        self.__connection.commit()
         for name in names:
             self.wordcloud_names.append(name[0])
         print(self.wordcloud_names)
@@ -114,9 +114,9 @@ class DataBase:
         read_table = "SELECT * FROM Wordclouds WHERE name=?;"
         while True:
             if name in self.wordcloud_names:
-                self.cursor.execute(read_table, [name])
-                output = self.cursor.fetchall()
-                self.connection.commit()
+                self.__cursor.execute(read_table, [name])
+                output = self.__cursor.fetchall()
+                self.__connection.commit()
 
                 x_coordinates = self.coordinates_manipulation(output[0][2])
                 y_coordinates = self.coordinates_manipulation(output[0][3])

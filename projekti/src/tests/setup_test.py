@@ -9,7 +9,7 @@ class TestDataSetUp(unittest.TestCase):
         self.reader = Reader()
         self.dir = "projekti/data_folder/tekstidata.txt"
         self.text_data = self.reader.read_txt(self.dir)
-        self.setup = SetUp(self.text_data)
+        self.setup = SetUp(self.text_data, "s")
 
     def test_punctuation_mark_removal_works(self):
         punctuation = [".", ",", "?", "!", "/"]

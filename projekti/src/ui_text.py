@@ -30,6 +30,7 @@ class TextInterface():
         self.textdata_name = ""
         self.row_name = ""
         self.text_data = None
+        self.shape = ""
 
     def execute_data_preprocessing(self):
         """Executes data preprocessing for wordcloud creation.
@@ -54,9 +55,15 @@ class TextInterface():
                 if self.textdata_name not in txt_files:
                     print("Filename not found. Please try again.")
 
+            while self.shape not in ["s", "c"]:
+                self.shape = input(
+                    "Please give a shape for the word cloud (s for square, c for circle ): ")
+                if self.shape not in ["s", "c"]:
+                    print("The input must be either 'c' or 's'.")
+
             self.text_data = reader.read_txt(
                 self.data_path + self.textdata_name)
-            setup = SetUp(self.text_data)
+            setup = SetUp(self.text_data, self.shape)
             setup.modify_text()
             setup.string_to_list()
             self.words_count = setup.count_words()
@@ -79,7 +86,6 @@ class TextInterface():
     def execute_wordcloud_creation(self):
         """Executes the wordcloud creation and saving.
         """
-        print("\nCreating a wordcloud...")
         wordcloud = WordCloud(
             self.words_count, self.x_coordinates, self.y_coordinates)
 
@@ -87,6 +93,7 @@ class TextInterface():
             self.wordcloud_filename = input(
                 "Please give a name for the wordcloud (without a filename extension): ")
 
+        print("\nCreating a wordcloud...")
         wordcloud.plot_words(self.wordcloud_filename)
         print("Wordcloud created and saved successfully.")
 
